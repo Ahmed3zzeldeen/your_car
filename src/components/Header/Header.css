@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 5%;
+  color: var(--main-bg-color);
+  background: var(--bg-gradient);
+  position: fixed;
+  z-index: 9999;
+}
+
+.logo {
+  font-size: 4.5rem;
+  color: var(--color-text-primary-light);
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.4rem;
+  font-family: var(--Font-Family-Secondary);
+}
+
+.main-nav ul li a {
+  margin: 0 calc(var(--dist-margin-primary) * 2);
+  padding: var(--dist-padding-secondary);
+}
+
+.main-nav ul li a.active,
+.main-nav ul li:hover a {
+  background-color: var(--color-primary);
+  border-radius: var(--border-dist-primary);
+}
+
+span.shopping-icon {
+  font-size: 4.2rem;
+  line-height: 4.2rem;
+  color: var(--color-text-primary-light);
+}
