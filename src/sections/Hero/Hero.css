@@ -1,0 +1,23 @@
+.Hero-section {
+  background: url(../../assets/Background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 102rem;
+  direction: rtl;
+}
+
+.Hero-section .text-box {
+  max-width: 50%;
+  margin-top: 20rem;
+}
+
+.Hero-section .text-box h2,
+.Hero-section .text-box p {
+  margin-bottom: 2rem;
+}
+
+.Hero-section .text-box p {
+  width: 70%;
+  font-size: 3.2rem;
+}

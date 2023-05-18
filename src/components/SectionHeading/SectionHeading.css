@@ -1,0 +1,16 @@
+.section-heading {
+  position: relative;
+}
+
+.section-heading .main-heading {
+  font-size: 10rem;
+  color: var(--color-secondary);
+}
+
+.section-heading .sub-heading {
+  font-size: 4.8rem;
+  /* color: var(--color-primary); */
+  /* text-align: start; */
+  /* margin-top: -5rem; */
+  /* margin-left: 2rem; */
+}

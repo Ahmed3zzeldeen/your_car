@@ -1,0 +1,21 @@
+.btn {
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: var(--color-text-primary-light);
+  background: transparent;
+  border: 0.4rem solid var(--color-text-primary-light);
+  border-radius: var(--border-dist-primary-big);
+  padding: var(--dist-padding-primary-big);
+  font-size: 3.2rem;
+  font-weight: 700;
+  direction: ltr;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-text-primary-light);
+  color: var(--color-text-primary-dark);
+  transform: scale(1.05);
+}

@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/*
+  Font-Families
+  - Nunito Sans --> 400 
+  - Lora        --> 500 / 700 
+
+  Font-Size__System 
+  16 / 24 / 32 / 48 / 56 / 64 / 128 px
+
+*/
+:root {
+  font-size: 10px;
+  --Font-Family-Primary: "Lora", serif;
+  --Font-Family-Secondary: "Nunito", sans-serif;
+
+  --color-primary: #741906;
+  --color-secondary: #ebebeb;
+  --color-third: #232730;
+
+  --color-text-primary-light: #ffffff;
+  --color-text-primary-dark: #232730;
+
+  --dist-padding-primary-big: 1.5rem;
+  --dist-padding-primary: 1rem;
+  --dist-padding-secondary: 0.5rem;
+
+  --dist-margin-primary: 0.5rem;
+
+  --border-dist-primary-big: 1.5rem;
+  --border-dist-primary: 0.5rem;
+  --dist-gap-primary: 2.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: auto;
+  font-family: var(--Font-Family-Primary);
+  color: var(--color-text-primary-light);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: var(--color-text-primary-light);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  padding-top: 10rem;
+  background-color: var(--color-secondary);
+  max-width: 100%;
+}
+
+.container {
+  max-width: 144rem;
+  padding: 0 8rem;
+}
+
+/* 16 / 24 / 32 / 48 / 56 / 64 / 128 px */
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 5.6rem;
+}
+
+h3 {
+  font-size: 4.8rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 2.4rem;
+  margin: 3.2rem 0;
 }

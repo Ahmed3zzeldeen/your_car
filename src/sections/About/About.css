@@ -1,0 +1,53 @@
+#About {
+  background-color: var(--color-text-primary-light);
+  color: var(--color-text-primary-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+#About .text-box {
+  width: 55%;
+}
+
+#About .text-box p {
+  font-family: var(--Font-Family-Secondary);
+}
+
+#About .img-box {
+  direction: rtl;
+  width: 35%;
+}
+
+#About .img-box .BG-Image {
+  position: absolute;
+  top: 20rem;
+  right: 10rem;
+}
+
+#About .img-box .Car-Image {
+  z-index: 2;
+  top: 20rem;
+  right: 0rem;
+  position: absolute;
+}
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading .main-heading {
+  font-size: 10rem;
+  color: var(--color-secondary);
+}
+
+.section-heading .sub-heading {
+  font-size: 4.8rem;
+  color: var(--color-primary);
+  text-align: start;
+  margin-top: -5rem;
+  margin-left: 2rem;
+}
