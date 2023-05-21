@@ -1,0 +1,36 @@
+#Services {
+  min-height: 810px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../../assets/Services-BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-BG-section-light);
+  text-align: center;
+}
+
+#Services .services-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--color-third);
+}
+#Services .service-box {
+  width: 35rem;
+}
+
+#Services .service-box .service-icon {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--color-third);
+  color: var(--color-text-primary-light);
+  font-size: 3rem;
+  line-height: 10rem;
+  border-radius: var(--border-dist-primary-big);
+  margin-bottom: var(--dist-padding-primary-big);
+}

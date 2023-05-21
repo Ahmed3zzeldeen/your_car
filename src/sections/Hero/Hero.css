@@ -2,14 +2,15 @@
   background: url(../../assets/Background.png) no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100vh;
+  padding-top: 10rem;
   display: flex;
-  height: 102rem;
   direction: rtl;
 }
 
 .Hero-section .text-box {
   max-width: 50%;
-  margin-top: 20rem;
+  justify-self: start;
 }
 
 .Hero-section .text-box h2,

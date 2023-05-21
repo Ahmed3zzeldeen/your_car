@@ -1,5 +1,5 @@
 import './Hero.css';
-import { HiArrowUpRight } from "react-icons/hi2";
+// import { HiArrowUpRight } from "react-icons/hi2";
 import PrimaryBtn from './../../components/Buttons/Buttons';
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
           us today and drive away
           with your dream car!</p>
         <PrimaryBtn>
-          Discover <HiArrowUpRight />
+          Discover {/* <HiArrowUpRight /> */}
         </PrimaryBtn>
       </div>
     </section >
