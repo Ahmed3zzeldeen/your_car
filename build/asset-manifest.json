@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07cf913f.css",
+    "main.js": "/static/js/main.9cbb671e.js",
+    "static/media/Background.png": "/static/media/Background.5ec6b6901e54fafa9bfe.png",
+    "static/media/About-BG.png": "/static/media/About-BG.b859d19fbe439b1c66e8.png",
+    "static/media/Car-02.png": "/static/media/Car-02.79c0796ad638c955b259.png",
+    "static/media/About-Car.png": "/static/media/About-Car.a24df5313843c3ecab2a.png",
+    "static/media/Car-08.png": "/static/media/Car-08.4c73358abf77785c8e53.png",
+    "static/media/Car-01.png": "/static/media/Car-01.a9a00f5bf82a8b2e5d4c.png",
+    "static/media/Car-04.png": "/static/media/Car-04.37c86af21e64979d57b1.png",
+    "static/media/Services-BG.png": "/static/media/Services-BG.784cbbf285aad2456274.png",
+    "static/media/Car-06.png": "/static/media/Car-06.bdae3591b574cd65c045.png",
+    "static/media/Car-09.png": "/static/media/Car-09.845a19dbc17dcb41ba91.png",
+    "static/media/Car-05.png": "/static/media/Car-05.b2ff3ec2964678718faf.png",
+    "static/media/Car-07.png": "/static/media/Car-07.ebbc5c1a63c3cfcdf603.png",
+    "static/media/Car-03.png": "/static/media/Car-03.ddc6d9d1f4cc20b62501.png",
+    "static/media/Testimonials-Car-01.png": "/static/media/Testimonials-Car-01.c33e2fc9372ccc3fa388.png",
+    "static/media/sponsor-07.png": "/static/media/sponsor-07.eb2c410c614821706bcd.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.07cf913f.css.map": "/static/css/main.07cf913f.css.map",
+    "main.9cbb671e.js.map": "/static/js/main.9cbb671e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07cf913f.css",
+    "static/js/main.9cbb671e.js"
+  ]
+}
