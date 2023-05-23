@@ -1,0 +1,28 @@
+span.shopping-icon {
+  font-size: 4.2rem;
+  line-height: 4.2rem;
+  position: relative;
+}
+
+span.shopping-icon.hasElement {
+  color: var(--color-primary);
+}
+span.shopping-icon .numberOfElements {
+  display: none;
+}
+
+span.shopping-icon.hasElement .numberOfElements {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary-light);
+  border-radius: var(--border-dist-primary);
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

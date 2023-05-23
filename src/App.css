@@ -15,11 +15,13 @@
   --Font-Family-Secondary: "Nunito", sans-serif;
 
   --color-primary: #741906;
+  --color-primary-alt: #941f08;
   --color-secondary: #ebebeb;
   --color-third: #232730;
 
   --color-BG-section-light: #dadada;
   --color-BG-section-dark: #11223e;
+  --color-BG-section-dark-w-opacity: rgba(17, 34, 62, 0.9);
 
   --color-text-primary-light: #ffffff;
   --color-text-primary-dark: #232730;
@@ -46,6 +48,20 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #1a1a1a63;
+  color: #eee;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
 }
 
 ul {

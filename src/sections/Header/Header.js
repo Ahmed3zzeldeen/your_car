@@ -1,5 +1,8 @@
 import './Header.css';
-import { TiShoppingCart } from "react-icons/ti";
+
+import { ShoppingCard } from './../../components/index';
+
+import { FaBars, FaCross } from "react-icons/fa";
 
 function Header() {
   return (
@@ -13,9 +16,12 @@ function Header() {
           <li><a href="/#Cars" >Cars</a></li>
           <li><a href="/#Contact-us" >Contact us</a></li>
         </ul>
-        <span className="shopping-icon"> <TiShoppingCart /> </span>
+        <ShoppingCard />
+        {/* <div className="menu-icon">  FIXME: TODO: to create my responsive site
+          <FaBars className="BarsIcon" />
+          <FaCross className="CrossIcon" />
+        </div> */}
       </nav>
-
     </header>
   );
 }

@@ -1,0 +1,30 @@
+.shopping-list-menu {
+  position: fixed;
+  background-color: var(--color-BG-section-dark-w-opacity);
+  height: calc(100vh - 60px);
+  width: 340px;
+  padding: 2rem;
+  top: 60px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transform: translateX(100%);
+}
+
+span.shopping-icon.hasElement.open + .shopping-list-menu {
+  transform: translateX(0);
+}
+
+.shopping-list-menu .delete-all-btn {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary-light);
+  padding: 0.5rem 1.6rem;
+  font-size: 1.6rem;
+}
+.shopping-list-menu .delete-all-btn:hover {
+  background-color: var(--color-primary-alt);
+}

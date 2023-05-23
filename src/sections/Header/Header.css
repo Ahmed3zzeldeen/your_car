@@ -1,21 +1,19 @@
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 6rem;
-  padding: 0 5%;
-  color: var(--main-bg-color);
-  background-color: rgba(0, 0, 0, 0.32);
-  backdrop-filter: blur(12px);
+  background-color: var(--color-text-primary-light);
+  color: var(--color-third);
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  backdrop-filter: blur(12px);
 }
 
 .logo {
   font-size: 4.5rem;
-  color: var(--color-text-primary-light);
 }
 
 .logo span {
@@ -36,18 +34,16 @@ header {
 }
 
 .main-nav ul li a {
+  color: var(--color-third);
   margin: 0 calc(var(--dist-margin-primary) * 2);
-  padding: var(--dist-padding-secondary);
+  padding: 0.8rem;
+  font-weight: 700;
+  transition: 0.23s;
 }
 
 .main-nav ul li a.active,
 .main-nav ul li:hover a {
   background-color: var(--color-primary);
   border-radius: var(--border-dist-primary);
-}
-
-span.shopping-icon {
-  font-size: 4.2rem;
-  line-height: 4.2rem;
   color: var(--color-text-primary-light);
 }

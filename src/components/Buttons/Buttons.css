@@ -1,6 +1,12 @@
 .btn {
   display: inline-block;
   cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.btn:focus {
+  outline: none;
+  border: none;
 }
 
 .btn-primary {

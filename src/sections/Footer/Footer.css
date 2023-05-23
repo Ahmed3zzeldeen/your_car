@@ -92,7 +92,7 @@
 }
 
 .Footer .first-cont .news-letter-cont .input-group .secondary-btn:hover {
-  background-color: #941f08;
+  background-color: var(--color-primary-alt);
 }
 
 .Footer .first-cont .contact-cont {

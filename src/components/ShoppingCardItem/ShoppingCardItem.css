@@ -1,0 +1,69 @@
+.shopping-item-cont {
+  background-color: white;
+  width: 300px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.shopping-item-cont .text-box {
+  font-family: var(--Font-Family-Secondary);
+  width: 60%;
+}
+
+.shopping-item-cont .text-box .item-heading {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.shopping-item-cont .text-box .item-class {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.shopping-item-cont .text-box .CRT-Item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 1.4rem;
+}
+
+.shopping-item-cont .text-box .CRT-Item .Buying-Counter {
+  align-items: center;
+}
+
+.shopping-item-cont .text-box .CRT-Item .Buying-Counter .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+
+.shopping-item-cont .text-box .CRT-Item .Buying-Counter .decrement-btn {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.shopping-item-cont .text-box .CRT-Item .Number-Of-Cars {
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
+}
+
+.shopping-item-cont .text-box .CRT-Item .Buying-Counter .increment-btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.shopping-item-cont .text-box .CRT-Item .remove-item-btn {
+  font-size: 1.4rem;
+}
+
+.shopping-item-cont .text-box .CRT-Item .remove-item-btn:hover {
+  color: var(--color-primary);
+}
+
+.shopping-item-cont .image-box {
+  height: 90px;
+}

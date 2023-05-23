@@ -58,6 +58,7 @@ const CarSlider = () => {
             carDes={Car.description}
             carSeats={Car.seats}
             carLuggage={Car.luggage}
+            carId={Car.id}
           />);
         })}
       </Slider>

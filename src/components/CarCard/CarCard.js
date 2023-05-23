@@ -1,5 +1,6 @@
 import './CarCard.css';
 
+import { BuyingCounterBtn } from "./../index";
 import { BsPeopleFill, BsFillBagFill } from 'react-icons/bs'
 
 const CarCard = (props) => {
@@ -11,6 +12,7 @@ const CarCard = (props) => {
       carDes,      = have car Description  : string
       carSeats,    = have car seats
       carLuggage,  = have car luggage
+      carId        = has car id 
     */
     <div className="Car-Card">
       <img className="Car-Image" src={props.carImage} alt="carImage" />
@@ -28,11 +30,7 @@ const CarCard = (props) => {
             <p className="Car-Feature-text">{props.carLuggage} Luggage</p>
           </span>
         </div>
-        <div className="Buying-Counter">
-          <button className="btn decrement-btn">-</button>
-          <h5 className="Number-Of-Cars">0</h5>
-          <button className="btn increment-btn">+</button>
-        </div>
+        <BuyingCounterBtn itemId={props.carId} />
       </div>
     </div>
   )
