@@ -4,7 +4,7 @@
 
 ![image](./screenshots/yourcar.jpeg)
 
-### [🔗 Live Demo link](https://yourcar-ahmed3zzeldeen.netlify.app/))
+### [🔗 Live Demo link](https://yourcar-ahmed3zzeldeen.netlify.app/)
 
 # Getting Started with Create React App
 
