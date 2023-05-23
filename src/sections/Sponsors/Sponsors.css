@@ -1,0 +1,13 @@
+.Sponsors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2.4rem 0;
+  background-color: #fafafa;
+}
+
+.sponsors-img {
+  max-width: 100px;
+  max-height: 100px;
+}

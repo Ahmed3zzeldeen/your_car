@@ -1,0 +1,35 @@
+.Cars-Slider {
+  width: 90%;
+}
+
+.slick-list {
+  width: 100%;
+  max-height: 75rem;
+}
+
+.slick-track {
+  margin: 10rem;
+}
+
+.slick-slide:not(:last-child) {
+  margin-left: 0.5rem;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
+}
+
+.Cars-Slider svg.slick-arrow {
+  background: var(--color-primary);
+  color: aliceblue;
+  width: 30px;
+  height: 30px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  z-index: 200;
+}

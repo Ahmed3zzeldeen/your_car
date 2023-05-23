@@ -1,6 +1,8 @@
 import './App.css';
 
-import { Header, Hero, About, Services, Cars, Footer } from './sections/index';
+
+
+import { Header, Hero, About, Services, Cars, Contact, Testimonials, Sponsors, Footer } from './sections/index';
 
 function App() {
   return (
@@ -10,6 +12,9 @@ function App() {
       <About />
       <Services />
       <Cars />
+      <Contact />
+      <Testimonials />
+      <Sponsors />
       <Footer />
     </>
   );

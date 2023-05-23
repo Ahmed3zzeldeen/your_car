@@ -1,5 +1,5 @@
 import './Header.css';
-// import { TiShoppingCart } from "react-icons/ti";
+import { TiShoppingCart } from "react-icons/ti";
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
           <li><a href="/#Cars" >Cars</a></li>
           <li><a href="/#Contact-us" >Contact us</a></li>
         </ul>
-        <span className="shopping-icon"> { /*<TiShoppingCart />*/} </span>
+        <span className="shopping-icon"> <TiShoppingCart /> </span>
       </nav>
 
     </header>

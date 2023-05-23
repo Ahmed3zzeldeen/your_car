@@ -6,7 +6,7 @@
   - Lora        --> 500 / 700 
 
   Font-Size__System 
-  16 / 24 / 32 / 48 / 56 / 64 / 128 px
+  12 / 14 / 16 / 24 / 32 / 48 / 56 / 64 / 128 px
 
 */
 :root {
@@ -17,7 +17,9 @@
   --color-primary: #741906;
   --color-secondary: #ebebeb;
   --color-third: #232730;
+
   --color-BG-section-light: #dadada;
+  --color-BG-section-dark: #11223e;
 
   --color-text-primary-light: #ffffff;
   --color-text-primary-dark: #232730;

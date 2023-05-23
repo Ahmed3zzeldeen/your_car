@@ -2,6 +2,10 @@ import './Services.css';
 
 import { SectionHeading } from "../../components/index";
 
+import ServicesIcon_1 from './../../assets/icons/Services-Icons-1.png'
+import ServicesIcon_2 from './../../assets/icons/Services-Icons-2.png'
+import ServicesIcon_3 from './../../assets/icons/Services-Icons-3.png'
+
 const Services = () => {
   return (
     <section className="container" id="Services">
@@ -12,7 +16,7 @@ const Services = () => {
         subPosition="center" />
       <div className="services-boxes">
         <div className="service-box">
-          <i className="service-icon">Icon</i>
+          <img className="service-icon" src={ServicesIcon_1} alt="ServicesIcon_1" />
           <h4 className="service-heading">Car sales</h4>
           <p className="service-description">
             At YourCar, we offer a wide
@@ -24,7 +28,7 @@ const Services = () => {
           </p>
         </div>
         <div className="service-box">
-          <i className="service-icon">Icon</i>
+          <img className="service-icon" src={ServicesIcon_2} alt="ServicesIcon_2" />
           <h4 className="service-heading">Car rental</h4>
           <p className="service-description">
             If you're in need of a luxury car
@@ -37,7 +41,7 @@ const Services = () => {
           </p>
         </div>
         <div className="service-box">
-          <i className="service-icon">Icon</i>
+          <img className="service-icon" src={ServicesIcon_3} alt="ServicesIcon_3" />
           <h4 className="service-heading">Car selling</h4>
           <p className="service-description">
             At YourCar, we make it easy to

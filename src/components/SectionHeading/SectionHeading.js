@@ -10,14 +10,19 @@ const SectionHeading = (props) => {
   // --> center;
 
   const styleElem = {
-    color: (props.subColor === "primary") ? "var(--color-primary)" : "var(--color-third)",
+    color: (props.subColor === "primary") ? "var(--color-primary)" : (props.subColor === "white") ? "var(--color-text-primary-light)" : "var(--color-third)",
     textAlign: (props.subPosition === "start") ? "start" : "center",
     marginTop: "-5rem",
     marginLeft: (props.subPosition === "start") ? "3rem" : "",
+
   }
   return (
     <div className="section-heading">
-      <h2 className="main-heading" style={{ textAlign: (props.subPosition === "start") ? "start" : "center" }} >{props.mainTitle}</h2>
+      <h2 className="main-heading" style={{
+        textAlign: (props.subPosition === "start") ? "start" : "center",
+        opacity: (props.mainTitleOpacity) ? props.mainTitleOpacity : "1",
+      }}
+      >{props.mainTitle}</h2>
       <h3 className="sub-heading" style={styleElem}>{props.subTitle}</h3>
     </div >
   )

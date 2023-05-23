@@ -1,8 +1,9 @@
 import './Buttons.css';
 
 const PrimaryBtn = (props) => {
+  // props.link 
   return (
-    <button className="btn btn-primary">{props.children}</button>
+    <a href={`./${props.link}`} className="btn btn-primary">{props.children}</a>
   );
 }
 
