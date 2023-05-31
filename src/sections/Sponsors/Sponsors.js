@@ -7,6 +7,7 @@ import Sponsor_04 from './../../assets/sponsor/sponsor-04.png';
 import Sponsor_05 from './../../assets/sponsor/sponsor-05.png';
 import Sponsor_06 from './../../assets/sponsor/sponsor-06.png';
 import Sponsor_07 from './../../assets/sponsor/sponsor-07.png';
+import Sponsor_08 from './../../assets/sponsor/sponsor-08.png';
 
 const Sponsors = () => {
   return (
@@ -18,6 +19,7 @@ const Sponsors = () => {
       <img className="sponsors-img" src={Sponsor_05} alt="sponsorImageIcon" />
       <img className="sponsors-img" src={Sponsor_06} alt="sponsorImageIcon" />
       <img className="sponsors-img" src={Sponsor_07} alt="sponsorImageIcon" />
+      <img className="sponsors-img" src={Sponsor_08} alt="sponsorImageIcon" />
     </section>
   )
 }
