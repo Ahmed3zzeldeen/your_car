@@ -1,15 +1,29 @@
 import './Header.css';
 
+import { useState } from "react";
+
 import { ShoppingCard } from './../../components/index';
 
-import { FaBars, FaCross } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+
+
 
 function Header() {
+  const [classValue, setClassValue] = useState("");
+
+  function setOpenClass() {
+    if (classValue.includes("open")) {
+      setClassValue("");
+    } else {
+      setClassValue("open");
+    }
+  }
+
   return (
-    <header className="main-header">
+    <header className="main-header container">
       <h1 className="logo" >Your<span>Car</span></h1>
       <nav className="main-nav" >
-        <ul className="main-link-list">
+        <ul className={`main-link-list ${classValue}`} >
           <li><a href="/#Home" className="active">Home</a></li>
           <li><a href="/#About" >About</a></li>
           <li><a href="/#Services" >Services</a></li>
@@ -17,10 +31,7 @@ function Header() {
           <li><a href="/#Contact-us" >Contact us</a></li>
         </ul>
         <ShoppingCard />
-        {/* <div className="menu-icon">  FIXME: TODO: to create my responsive site
-          <FaBars className="BarsIcon" />
-          <FaCross className="CrossIcon" />
-        </div> */}
+        <FaBars className="menu-icon" onClick={setOpenClass} />
       </nav>
     </header>
   );

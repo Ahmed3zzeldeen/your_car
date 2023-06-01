@@ -1,15 +1,29 @@
 #Contact-us {
-  display: flex;
-  width: 150rem;
-  flex-wrap: wrap;
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
   justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
-  padding-top: 0;
 }
 
 #Contact-us .CRT-Car-card {
-  max-width: calc(100% / 3);
   position: relative;
+}
+
+@media (max-width: 1000px) {
+  #Contact-us {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #Contact-us .CRT-Car-card:not(.active) {
+    display: none;
+  }
+  #Contact-us .CRT-Car-card img {
+    width: 100%;
+  }
 }
 
 #Contact-us .CRT-Car-card img {

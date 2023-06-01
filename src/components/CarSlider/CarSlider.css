@@ -1,10 +1,11 @@
 .Cars-Slider {
   width: 90%;
+  height: 660px;
 }
 
 .slick-list {
   width: 100%;
-  max-height: 75rem;
+  max-height: 750px;
 }
 
 .slick-track {
@@ -12,7 +13,7 @@
 }
 
 .slick-slide:not(:last-child) {
-  margin-left: 0.5rem;
+  margin: 3px;
 }
 
 .slick-prev {
@@ -21,6 +22,24 @@
 
 .slick-next {
   right: -30px;
+}
+
+@media (max-width: 800px) {
+  .slick-slide {
+    max-width: 400px !important;
+  }
+}
+@media (max-width: 500px) {
+  .slick-prev {
+    left: -10px !important;
+  }
+
+  .slick-next {
+    right: -10px !important;
+  }
+  .slick-slide {
+    max-width: 340px !important;
+  }
 }
 
 .Cars-Slider svg.slick-arrow {

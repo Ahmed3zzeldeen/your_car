@@ -49,7 +49,7 @@ const Contact = () => {
           <PrimaryBtn link="#" >Contact</PrimaryBtn>
         </div>
       </div>
-      <div className="CRT-Car-card">
+      <div className="CRT-Car-card active">
         <img src={carImage_05} alt="carImage" />
         <div className="text-box">
           <h4>Tesla Model 3</h4>
@@ -74,7 +74,7 @@ const Contact = () => {
           <PrimaryBtn link="#" >Contact</PrimaryBtn>
         </div>
       </div>
-      <div className="CRT-Car-card">
+      <div className="CRT-Car-card active">
         <img src={carImage_08} alt="carImage" />
         <div className="text-box">
           <h4>Tesla Model 3</h4>

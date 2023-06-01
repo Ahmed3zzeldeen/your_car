@@ -1,13 +1,31 @@
 .Sponsors {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 2.4rem 0;
-  background-color: #fafafa;
+  background-color: #e5e5e5;
+  justify-content: space-evenly;
+  padding: 5rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2rem;
+}
+.sponsors-img {
+  width: 60px;
+  margin: 2.4rem;
 }
 
-.sponsors-img {
-  max-width: 100px;
-  max-height: 100px;
+@media (max-width: 1000px) {
+  .Sponsors {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (max-width: 500px) {
+  .sponsors-img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sponsors-img {
+    width: 30px;
+  }
 }

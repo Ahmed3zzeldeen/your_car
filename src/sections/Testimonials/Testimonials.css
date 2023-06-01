@@ -11,6 +11,26 @@
   font-size: 12.8rem;
 }
 
+@media (max-width: 1000px) {
+  .Testimonials .section-heading .main-heading {
+    font-size: 6.4rem;
+  }
+  .Testimonials .section-heading .sub-heading {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .Testimonials .section-heading .main-heading {
+    font-size: 5rem;
+  }
+
+  .Testimonials .section-heading .sub-heading {
+    font-size: 4rem !important;
+    margin-top: -4rem !important;
+  }
+}
+
 .Testimonials .section-heading .sub-heading {
   font-size: 5.6rem;
 }
@@ -22,7 +42,7 @@
 }
 
 .Testimonials .Testimonials-Card {
-  width: 80rem;
+  width: 70%;
   font-family: var(--Font-Family-Secondary);
   background-color: var(--color-text-primary-light);
   color: var(--color-third);
@@ -39,10 +59,32 @@
   position: absolute;
   content: "";
   background-image: url(./../../assets/testimonials-cars/Testimonials-Car-01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 342px;
   height: 230px;
   bottom: -80px;
-  right: -170px;
+  right: -150px;
+}
+
+@media (max-width: 1000px) {
+  .Testimonials .Testimonials-Card::after {
+    width: 171px;
+    height: 115px;
+    bottom: -40px;
+    right: -60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Testimonials .Testimonials-Card::after {
+    width: 128.25px;
+    height: 86.25px;
+    right: -40px;
+  }
+  .Testimonials .Testimonials-Card .Testimonials-Info {
+    flex-direction: column;
+  }
 }
 
 .Testimonials .Testimonials-Card .Testimonials-Description {

@@ -2,6 +2,7 @@ import './CarCard.css';
 
 import { BuyingCounterBtn } from "./../index";
 import { BsPeopleFill, BsFillBagFill } from 'react-icons/bs'
+import { TiShoppingCart } from "react-icons/ti";
 
 const CarCard = (props) => {
   return (
@@ -32,6 +33,7 @@ const CarCard = (props) => {
         </div>
         <BuyingCounterBtn itemId={props.carId} />
       </div>
+      <button className="Add-To-Cart-Btn btn ">Add To Cart <TiShoppingCart /> </button>
     </div>
   )
 }

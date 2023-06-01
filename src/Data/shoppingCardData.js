@@ -42,6 +42,7 @@ export function updateNumberOfCarsToShoppingList(newNumberOfCars, itemId) {
 }
 
 export function removeItemById(itemId) {
+  console.log(`i will remove this item with id = ${itemId}`);
   let index = -1;
   ShoppingListData.forEach((element, i) => {
     if (element.id === itemId) {
@@ -49,14 +50,16 @@ export function removeItemById(itemId) {
     }
     i++;
   });
-  ShoppingListData.splice(index, 1);
-  setDataToLocalStorage(ShoppingListData);
+  if (index !== -1) {
+    ShoppingListData.splice(index, 1);
+    setDataToLocalStorage(ShoppingListData);
+  }
 }
 
-// export function removeAllItems() { FIXME:
-//   console.log("i Remove All");
-//   ShoppingListData = [];
-// }
+export function removeAllItems() {
+  ShoppingListData = [];
+  setDataToLocalStorage(ShoppingListData);
+}
 
 // <============== Local Storage ===============> 
 
@@ -69,25 +72,3 @@ export function getDataToLocalStorage() {
   ShoppingListData = JSON.parse(x);
 }
 
-
-function UnitTest() { // TODO:
-  console.log(ShoppingListData);
-  addDataToShoppingList(
-    {
-      "id": "car-data-03",
-      "name": "FIRST CLASS",
-      "class": "Mercedes maybach s600",
-      "description": "The Mercedes-Benz S-Class is the epitome of luxury and style, with its sleek lines and advanced technology. It's a four-door sedan that's perfect for those who demand the very best in automotive design and performance.",
-      "seats": 3,
-      "luggage": 1,
-      "image": "/images/mercedes-benz-s-class.png",
-      "numberOfCars": 7
-    }
-  );
-  console.log(ShoppingListData); // has 3 data
-  updateNumberOfCarsToShoppingList(10, "car-data-03");
-  console.log(ShoppingListData); // has 3 data and update to 10  console.log("Data After removing")
-  removeItemById("car-data-03");
-}
-
-// UnitTest() // TODO:

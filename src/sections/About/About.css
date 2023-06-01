@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 800px;
   padding-top: 10rem;
   padding-bottom: 10rem;
   position: relative;
@@ -24,13 +25,36 @@
 
 #About .img-box .BG-Image {
   position: absolute;
-  top: 20rem;
-  right: 10rem;
+  top: 50px;
+  right: 100px;
 }
 
 #About .img-box .Car-Image {
   z-index: 2;
-  top: 20rem;
+  top: 50px;
   right: 0rem;
   position: absolute;
+}
+
+@media (max-width: 1230px) {
+  #About .img-box {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  #About .text-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  #About .section-heading .main-heading {
+    font-size: 6rem;
+  }
+
+  #About .section-heading .sub-heading {
+    font-size: 5rem !important;
+    margin-top: -4rem !important;
+  }
 }

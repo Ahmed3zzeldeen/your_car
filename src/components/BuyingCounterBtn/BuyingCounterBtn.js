@@ -16,17 +16,17 @@ const BuyingCounterBtn = (props) => {
   });
   let InitNumberOfCars = (TempD !== -1) ? TempD.numberOfCars : 0;
 
-  const [counter, setCounter] = useState(InitNumberOfCars); // TODO: Change init value if has itemId
+  const [counter, setCounter] = useState(InitNumberOfCars);
 
   function countUp() {
     setCounter(counter + 1);
-    ShoppingCardDataAll.updateNumberOfCarsToShoppingList(counter, props.itemId);
+    ShoppingCardDataAll.updateNumberOfCarsToShoppingList(counter + 1, props.itemId);
   }
 
   function countDown() {
     if (counter > 0) {
       setCounter(counter - 1);
-      ShoppingCardDataAll.updateNumberOfCarsToShoppingList(counter, props.itemId);
+      ShoppingCardDataAll.updateNumberOfCarsToShoppingList(counter - 1, props.itemId);
     }
   }
 

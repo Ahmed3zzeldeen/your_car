@@ -13,14 +13,19 @@
 }
 
 #Services .services-boxes {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
   color: var(--color-third);
 }
-#Services .service-box {
-  width: 35rem;
+
+@media (max-width: 800px) {
+  #Services .services-boxes {
+    max-width: 300px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 #Services .service-box .service-icon {
