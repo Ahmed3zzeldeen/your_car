@@ -4,36 +4,30 @@ import { BuyingCounterBtn } from "./../index";
 import { BsPeopleFill, BsFillBagFill } from 'react-icons/bs'
 import { TiShoppingCart } from "react-icons/ti";
 
-const CarCard = (props) => {
+import { useShoppingCart } from "./../../contexts/ShoppingCartContext";
+
+const CarCard = ({ carId, carImage, carName, carClass, carDes, carSeats, carLuggage }) => {
+  const { increaseCartQuantity } = useShoppingCart();
   return (
-    /*
-      carImage,    = have car scr 
-      carName,     = have car name         : string
-      carClass,    = have car Model        : string
-      carDes,      = have car Description  : string
-      carSeats,    = have car seats
-      carLuggage,  = have car luggage
-      carId        = has car id 
-    */
     <div className="Car-Card">
-      <img className="Car-Image" src={props.carImage} alt="carImage" />
-      <h5 className="Car-Name">{props.carName}</h5>
-      <p className="Car-Class">{props.carClass}</p>
-      <p className="Car-Description">{props.carDes}</p>
+      <img className="Car-Image" src={carImage} alt="carImage" />
+      <h5 className="Car-Name">{carName}</h5>
+      <p className="Car-Class">{carClass}</p>
+      <p className="Car-Description">{carDes}</p>
       <div className="Car-Buying-Description-Box">
         <div className="Car-Features-Box">
           <span className="Car-Feature">
             <BsPeopleFill className="Car-Feature-Icon" />
-            <p className="Car-Feature-text">{props.carSeats} Seats</p>
+            <p className="Car-Feature-text">{carSeats} Seats</p>
           </span>
           <span className="Car-Feature">
             <BsFillBagFill className="Car-Feature-Icon" />
-            <p className="Car-Feature-text">{props.carLuggage} Luggage</p>
+            <p className="Car-Feature-text">{carLuggage} Luggage</p>
           </span>
         </div>
-        <BuyingCounterBtn itemId={props.carId} />
+        <BuyingCounterBtn itemId={carId} />
       </div>
-      <button className="Add-To-Cart-Btn btn ">Add To Cart <TiShoppingCart /> </button>
+      <button className="Add-To-Cart-Btn btn " onClick={() => increaseCartQuantity(carId)}>Add To Cart <TiShoppingCart /> </button>
     </div>
   )
 }

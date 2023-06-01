@@ -4,24 +4,33 @@ import { FaTrash } from 'react-icons/fa';
 
 import { ShoppingCardItem } from './../index';
 
-import * as ShoppingCardDataAll from "./../../Data/shoppingCardData";
+import { useShoppingCart } from "./../../contexts/ShoppingCartContext";
 
-const ShoppingListMenu = () => {
+import Data from './../../Data/data.json';
+const allCarsInData = Data.cars;
+
+const ShoppingListMenu = ({ msg }) => {
+  const { cartItems, removeAllItemsFromCart } = useShoppingCart();
   return (
     <div className="shopping-list-menu">
-      <div className="list-of-shopping-items">
-        {ShoppingCardDataAll.ShoppingListData.map((item) => {
-          return (<ShoppingCardItem
-            key={item.id}
-            itemHeading={item.name}
-            itemClass={item.class}
-            itemId={item.id}
-            itemImage={item.image}
-          />);
-        })
-        }
-      </div>
-      <button className="btn delete-all-btn" >Delete All <FaTrash /></button>
+      {(msg) ? <div>{msg}</div> :
+        <>
+          <div className="list-of-shopping-items">
+            {cartItems.map((item) => {
+              const itemFromData = allCarsInData.find(x => x.id === item.id);
+              return (<ShoppingCardItem
+                key={item.id}
+                itemHeading={itemFromData.name}
+                itemClass={itemFromData.class}
+                itemId={itemFromData.id}
+                itemImage={itemFromData.image}
+              />);
+            })
+            }
+          </div>
+          <button className="btn delete-all-btn" onClick={() => { removeAllItemsFromCart() }} >Delete All <FaTrash /></button>
+        </>
+      }
     </div >
   )
 }

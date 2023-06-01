@@ -5,34 +5,31 @@ import { useState } from "react";
 import { ShoppingListMenu } from './../index'
 
 import { TiShoppingCart } from "react-icons/ti";
-
-import * as ShoppingCardDataAll from "./../../Data/shoppingCardData";
-
-
-const numberOfElements = ShoppingCardDataAll.ShoppingListData.length;
-const hasElement = (numberOfElements > 0);
+import { useShoppingCart } from "./../../contexts/ShoppingCartContext";
 
 const ShoppingCard = () => {
-  const [listMenuClasses, setListMenuClasses] = useState("");
+  const { cartItems } = useShoppingCart();
+  const [classValue, setClassValue] = useState("");
 
-  function handelActiveClass() {
-    if (hasElement) {
-      if (listMenuClasses.includes("open")) {
-        setListMenuClasses("");
-      } else {
-        setListMenuClasses("open");
-      }
+  let numberOfElements = cartItems.length;
+  const hasElement = (numberOfElements > 0);
+
+  function setOpenClass() {
+    if (classValue.includes("open")) {
+      setClassValue("");
+    } else {
+      setClassValue("open");
     }
   }
 
   return (
     <>
-      <span className={`btn shopping-icon ${listMenuClasses} ${(hasElement) ? "hasElement" : ""}`}>
-        <TiShoppingCart onClick={handelActiveClass} />
+      <span className={`btn shopping-icon ${classValue} ${(hasElement) ? "hasElement" : ""}`}>
+        <TiShoppingCart onClick={setOpenClass} />
         <span className="numberOfElements">{numberOfElements}</span>
       </span>
       <>
-        {(hasElement) ? <ShoppingListMenu /> : ''}
+        {(hasElement) ? <ShoppingListMenu /> : <ShoppingListMenu msg="There is no Items In Cart yet" />}
       </>
     </>
   )
