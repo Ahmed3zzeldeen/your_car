@@ -1,5 +1,5 @@
 .Hero-section {
-  background: url(../../assets/Background.png) no-repeat;
+  background: url(../../assets/Background.webp) no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -50,5 +50,8 @@
 @media (max-width: 500px) {
   .Hero-section .text-box {
     max-width: 100%;
+  }
+  .Hero-section .text-box h2 {
+    font-size: 3.1rem;
   }
 }

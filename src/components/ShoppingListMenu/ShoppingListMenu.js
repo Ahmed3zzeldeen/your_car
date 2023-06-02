@@ -13,7 +13,7 @@ const ShoppingListMenu = ({ msg }) => {
   const { cartItems, removeAllItemsFromCart } = useShoppingCart();
   return (
     <div className="shopping-list-menu">
-      {(msg) ? <div>{msg}</div> :
+      {(msg) ? <p className="msg">{msg}</p> :
         <>
           <div className="list-of-shopping-items">
             {cartItems.map((item) => {

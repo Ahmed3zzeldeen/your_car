@@ -1,7 +1,7 @@
 .shopping-list-menu {
   position: fixed;
   background-color: var(--color-BG-section-dark-w-opacity);
-  height: 100vh;
+  height: calc(100vh - 6rem);
   width: 340px;
   padding: 2rem;
   top: 6rem;
@@ -16,7 +16,24 @@
   transform: translateX(100%);
 }
 
-span.shopping-icon.hasElement.open + .shopping-list-menu {
+@media (max-width: 400px) {
+  .shopping-list-menu {
+    width: 100%;
+  }
+}
+
+.shopping-list-menu p,
+.shopping-item-cont .text-box .CRT-Item .Number-Of-Cars {
+  color: var(--color-third);
+}
+.shopping-list-menu p.msg {
+  color: var(--color-text-primary-light);
+  font-family: var(--Font-Family-Secondary);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+span.shopping-icon.open + .shopping-list-menu {
   transform: translateX(0);
 }
 

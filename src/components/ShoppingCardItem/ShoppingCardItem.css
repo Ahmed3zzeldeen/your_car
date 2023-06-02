@@ -57,6 +57,7 @@
 }
 
 .shopping-item-cont .text-box .CRT-Item .remove-item-btn {
+  color: var(--color-third);
   font-size: 1.4rem;
 }
 

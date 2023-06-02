@@ -10,6 +10,7 @@
   background-position: center;
   background-color: var(--color-BG-section-light);
   text-align: center;
+  padding-top: 2.4rem;
 }
 
 #Services .services-boxes {

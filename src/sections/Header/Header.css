@@ -1,8 +1,7 @@
 header {
   width: 100%;
   height: 6rem;
-  background-color: var(--color-text-primary-light);
-  color: var(--color-third);
+  color: var(--color-text-primary-light);
   position: fixed;
   z-index: 999;
   display: flex;
@@ -12,8 +11,17 @@ header {
   backdrop-filter: blur(12px);
 }
 
+.header-bg {
+  background-color: var(--color-text-primary-light);
+  color: var(--color-third);
+}
+
 .logo {
   font-size: 4.5rem;
+}
+
+.header-bg .logo {
+  color: var(--color-third);
 }
 
 .logo span {
@@ -33,11 +41,14 @@ header {
 }
 
 .main-nav ul.main-link-list li a {
-  color: var(--color-third);
   margin: 0 calc(var(--dist-margin-primary) * 2);
   padding: 0.8rem;
   font-weight: 700;
   transition: 0.23s;
+}
+
+.header-bg .main-nav ul.main-link-list li a {
+  color: var(--color-third);
 }
 
 .main-nav ul.main-link-list li a.active,
@@ -74,6 +85,7 @@ header {
     transform: translateX(100%);
   }
 
+  .header-bg .main-nav ul.main-link-list li a,
   .main-nav ul.main-link-list li a {
     color: var(--color-text-primary-light);
     width: 100%;
